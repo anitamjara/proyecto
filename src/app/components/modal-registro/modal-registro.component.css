@@ -1,0 +1,55 @@
+.btn{
+  color: white;
+  width: 100%;
+  max-width: 330px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.btn-facebook{
+  background-color: #3b5998 ;
+}
+
+.btn-registrarse{
+  background-color: #c40099 ;
+}
+
+.btn-cuenta{
+  background-color: white;
+  border-color: #c40099;
+  color: #c40099;
+}
+
+.close{
+  color: black;
+  font-size: 20px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  margin: 0 auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+  margin-top: 5px;
+  text-align: justify;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.FormControlSelect{
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.small{
+  text-align: justify;
+}

@@ -1,0 +1,45 @@
+<ng-template #myModalRegistro let-c="close" let-d="dismiss">
+
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Registrarse</h4>
+    <a class="close" aria-label="Close" (click)="closeModal()" href="#"><i class="fa fa-times"></i></a>
+  </div>
+
+  <div class="modal-body text-center">
+
+    <form class="form-signin" #usuarioForm="ngForm" (ngSubmit)="onSubmit()">
+
+      <button type="button" class="btn btn-facebook btn-lg btn-block"><i class="fa fa-facebook"></i> Registrarse con
+        Facebook</button>
+      <small id="emailHelp" class="form-text text-muted">Nunca compartiremos nada en su Facebook.</small>
+      <input type="email" class="form-control" placeholder="Email" #email="ngModel" [(ngModel)]="usuario.email" name="email" required>
+      <input type="nombre" class="form-control" placeholder="Nombre" #nombre="ngModel" [(ngModel)]="usuario.nombre"  name="nombre" required>
+      <input type="apellido" id="inputApellido" class="form-control" placeholder="Apellido">
+      <input type="telefono" id="inputTelefono" class="form-control" placeholder="Teléfono">
+      <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" #password="ngModel" [(ngModel)]="usuario.password" name= "password" required>
+
+      <div class="form-group FormControlSelect">
+        <label>Cómo conoció a HomeDog?</label>
+        <select class="form-control">
+          <option>Seleccione</option>
+          <option>Instagram</option>
+          <option>Facebook</option>
+          <option>YouTube</option>
+          <option>Amig@s</option>
+        </select>
+      </div>
+
+      <div class="checkbox mb-3">
+        <label><input type="checkbox" value="remember-me"> Quiero recibir notificaciones</label>
+        <label><input type="checkbox" value="remember-me"> Acepto los <a href="#">Términos y condiciones</a></label>
+      </div>
+
+      <button type="submit" value="Guardar" class="btn btn-registrarse btn-lg btn-block">Registrarse</button>
+    </form>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-cuenta btn-lg btn-block" >Ya tengo una cuenta</button>
+  </div>
+
+</ng-template>

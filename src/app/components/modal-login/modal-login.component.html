@@ -1,0 +1,33 @@
+<ng-template #myModalLogin let-c="close" let-d="dismiss">
+
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Iniciar sesión</h4>
+    <a class="close" aria-label="Close" (click)="closeModal()" href="#"><i class="fa fa-times"></i></a>
+  </div>
+
+  <div class="modal-body text-center">
+    <form class="form-signin">
+      <button type="button" class="btn btn-instagram btn-lg btn-block"><i class="fa fa-instagram"></i> Ingresar con
+        Instagram</button>
+      <button type="button" class="btn btn-facebook btn-lg btn-block"><i class="fa fa-facebook"></i> Ingresar con
+        Facebook</button>
+      <small id="emailHelp" class="form-text text-muted">Nunca compartiremos nada en su Facebook.</small>
+
+      <!--img class="mb-4"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSphqVrLQnewOpf1b9kVAbBD_jAQxFmk9UKFw&usqp=CAU" alt=""
+      width="100" height="100"-->
+
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+
+      <button type="button" class="btn btn-lock btn-sm btn-block"><i class="fa fa-lock"></i> Olvidé mi contraseña.</button>
+
+    </form>
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-lg btn-login btn-block" type="submit">Log in</button>
+    <button class="btn btn-lg btn-registrarse btn-block" type="submit">Registrarse</button>
+  </div>
+
+</ng-template>
